@@ -1,0 +1,128 @@
+.GalleriesSection-container{
+    margin-top: 100px;
+}
+.GalleriesSection .Galleries-title{
+    max-width: 247px;
+    margin: 0 auto;
+}
+.GalleriesSection .Galleries-title h2{
+    font-family: 'Playfair Display';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 60px;
+    line-height: 80px;
+    color: #0E204E;
+    
+}
+.GalleriesSection .Galleries-subtitle{
+    max-width: 726px;
+    min-height: 72px;
+    margin: 0 auto;
+}
+.GalleriesSection .Galleries-subtitle p{
+    font-family: 'Manrope';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 36px;
+    text-align: center;
+    color: #263238;
+}
+.GalleriesSection .Galleries-images{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 30px;
+}
+.GalleriesSection-mobile{
+    display: none;
+}
+
+@media (max-width: 767px){
+    .GalleriesSection-container{
+        margin-top: 5px;
+    }
+    .GalleriesSection{
+        display: none;
+    }
+    .GalleriesSection-mobile{
+        display: block;
+    }
+    .GalleriesSection-mobile .Galleries-title{
+        max-width: 247px;
+        margin: 0 auto;
+    }
+    .GalleriesSection-mobile .Galleries-title h2{
+        font-family: 'Playfair Display';
+        font-style: normal;
+        font-weight: 700;
+        font-size: 24px;
+        line-height: 32px;
+        color: #0E204E;   
+    }
+    .GalleriesSection-mobile .Galleries-subtitle{
+        max-width: 726px;
+        min-height: 72px;
+        margin: 0 auto;
+    }
+    .GalleriesSection-mobile .Galleries-subtitle p{
+        font-family: 'Lato';
+        font-style: normal;
+        font-weight: 300;
+        font-size: 16px;
+        line-height: 26px;
+        text-align: center;
+        color: #263238;
+    }
+    .GalleriesSection-mobile .Galleries-images{
+     
+    }
+    .GalleriesSection-mobile .Galleries-images .grid1{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 10px;
+        margin-bottom: 10px;
+    }
+    .GalleriesSection-mobile .Galleries-images .grid2, .GalleriesSection-mobile .Galleries-images .grid3,
+    .GalleriesSection-mobile .Galleries-images .grid4{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 10px;
+    }
+    .GalleriesSection-mobile .Galleries-images .grid2 .left{
+        display: grid;
+        gap: 10px;
+    }
+    .GalleriesSection-mobile .Galleries-images .grid2 .right{
+        background-image: url('../../public/assets/PineappleIslan/12.png');
+        background-size: 100% 100%;
+        background-repeat: no-repeat;
+    }
+    .GalleriesSection-mobile .Galleries-images .grid3, .GalleriesSection-mobile .Galleries-images .grid4{
+        margin-top: 10px;
+    }
+    .GalleriesSection-mobile .Galleries-images .grid3 .left{
+        background-image: url('../../public/assets/PineappleIslan/13.png');
+        background-size: 100% 100%;
+        background-repeat: no-repeat;
+    }
+    .GalleriesSection-mobile .Galleries-images .grid3 .right{
+        display: grid;
+        gap: 10px;
+    }
+    .Galleries-images .bottom-image{
+        background-image: url('../../public/assets/PineappleIslan/bottom-img.png');
+        background-size: 100% 100%;
+        background-repeat: no-repeat;
+        width: 100%;
+        height: 270px;
+    }
+}
+@media(max-width: 500px){
+    .Galleries-images .bottom-image{
+        background-image: url('../../public/assets/PineappleIslan/bottom-img.png');
+        background-size: 100% 100%;
+        background-repeat: no-repeat;
+        width: 100%;
+        height: 150px;
+    }
+}

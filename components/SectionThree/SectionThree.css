@@ -1,0 +1,158 @@
+.section-three-container{
+    margin-top: 200px;
+}
+.section-three .section-three-title{
+    /* max-width: 776px; */
+    text-align: center;
+    margin: 0 auto;
+    margin-bottom: 50px;
+    border: 1px solid transparent;
+}
+.section-three .section-three-title h2{
+    font-family: 'Playfair Display';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 60px;
+    line-height: 80px;
+    color: #0E204E;
+}
+.section-three .section-three-content .top{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.section-three .section-three-content .top .left{
+    width: 550px;
+    height: 500px;
+    background-image: url(../../public/assets/Rectangle7.png);
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+}
+.section-three .section-three-content .top .middle{
+    position: relative;
+    left: -105px;
+    z-index: -1;
+    width: 412px;
+    height: 358px;
+    background: #0E204E;
+}
+.section-three .section-three-content .top .right{
+    width: 500px;
+    height: 500px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 50px;
+}
+.section-three .section-three-content .top .right div{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 60px;
+}
+
+.section-three .section-three-content .bottom{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.section-three .section-three-content .bottom .left{
+    width: 500px;
+    height: 500px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 50px;
+}
+.section-three .section-three-content .bottom .left div{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 60px;
+}
+
+.section-three .section-three-content .bottom .middle{
+    position: relative;
+    left: 105px;
+    z-index: -1;
+    width: 412px;
+    height: 358px;
+    background: #0E204E;
+}
+.section-three .section-three-content .bottom .right{
+    width: 550px;
+    height: 500px;
+    background-image: url(../../public/assets/Rectangle20.png);
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+}
+.section-three-mobile{
+    display: none;
+}
+@media(max-width: 767px){
+    .section-three-container{
+        margin-top: 5px;
+    }
+    .section-three-mobile .section-three-title h2{
+        font-family: 'Playfair Display';
+        font-style: normal;
+        font-weight: 700;
+        font-size: 24px;
+        line-height: 32px;
+        color: #0E204E;
+    }
+    .section-three{
+        display: none;
+    }
+    .section-three-mobile{
+        display: block;
+        /* display: flex; */
+        /* flex-direction: column; */
+        /* align-items: center; */
+        text-align: center;
+    }
+    .section-three-mobile .top{
+        max-width: 335px;
+        margin: 0 auto;
+        height: 387px;
+        background-image: url(../../public/assets/Rectangle7.png);
+        background-repeat: no-repeat;
+        background-size: 100% 100%;
+    }
+    .section-three-mobile .bottom{
+        position: relative;
+        top: -60px;
+        max-width: 299px;
+        min-height: 247px;
+        margin: 0 auto;
+        background: #0E204E;
+        box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+        padding: 14px;
+        padding-top: 45px;
+        padding-bottom: 45px;
+    }
+    .section-three-mobile .bottom .bottom-top{
+        margin-bottom: 57px;
+    }
+    .section-three-mobile .bottom .bottom-top, .section-three-mobile .bottom .bottom-bottom {
+        display: flex;
+        gap: 22px;
+
+    }
+    .section-three-mobile .bottom .bottom-top div, .section-three-mobile .bottom .bottom-bottom div{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 17px;
+        justify-content: center;
+        text-align: center;
+    }
+    .section-three-mobile .bottom .bottom-top div span, .section-three-mobile .bottom .bottom-bottom div span{
+        font-family: 'Poppins';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 12px;
+        line-height: 18px;
+        color: #FFFFFF;
+    }
+}

@@ -1,0 +1,75 @@
+.SectionFive-container{
+    margin-top: 100px;
+}
+.SectionFive-container .section-five{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.SectionFive-container .section-five .left{
+    max-width: 500px;
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    flex-direction: column;
+    /* gap: 50px; */
+}
+.SectionFive-container .section-five .left h2{
+    max-width: 319px;
+    font-family: 'Playfair Display';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 60px;
+    line-height: 80px;
+    color: #0E204E;
+    
+}
+.SectionFive-container .section-five .left .paragraph-and-btn{
+   position: relative;
+    top: -20px;
+}
+.SectionFive-container .section-five .left p{
+    max-width: 417px;
+    font-family: 'Manrope';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 30px;
+    color: #263238;
+    
+}
+.SectionFive-container .section-five .left button{
+    margin-top: 38px;
+    width: 239px;
+    height: 62px;
+    background: #0E204E;
+    font-family: 'Gotham';
+    font-style: normal;
+    font-weight: 300;
+    font-size: 20px;
+    line-height: 19px;
+    color: #FFFFFF;
+    border: none;
+    outline: none;
+}
+.SectionFive-container .section-five .middle{
+    position: relative;
+    left: 155px;
+    z-index: -1;
+    width: 412px;
+    height: 358px;
+    background: #0E204E;
+}
+.SectionFive-container .section-five .right{
+    width: 450px;
+    height: 500px;
+    background-image: url(../../public/assets/unsplash_.png);
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+}
+
+@media(max-width: 767px){
+    .SectionFive-container{
+        display: none;
+    }
+}

@@ -1,0 +1,70 @@
+.sectionfour-container{
+    margin-top: 100px;
+}
+.sectionfour-container .section-four{
+    display: flex;
+    align-items: center;
+}
+.sectionfour-container .section-four .left{
+    width: 600px;
+    height: 725px;
+    background-image: url('../../public/assets/Rectangle51.png');
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+}
+
+.sectionfour-container .section-four .middle{
+    width: 400px;
+    height: 445px;
+    background: #0E204E;
+    position: relative;
+    left: -104px;
+    z-index: -1;
+}
+.sectionfour-container .section-four .right{
+    position: relative;
+    top: -50px;
+    width: 650px;
+}
+.sectionfour-container .section-four .right .right-title h2{
+    font-family: 'Playfair Display';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 50px;
+    line-height: 80px;
+    color: #0E204E;
+}
+
+.sectionfour-container .section-four .right .right-bottom-list div{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    max-width: 100%;
+    gap: 15px;
+    padding: 10px;
+    padding-left: 20px;
+    padding-right: 20px;
+    margin-bottom: 14px;
+}
+.sectionfour-container .section-four .right .right-bottom-list div span{
+    font-family: 'Gotham';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 19px;
+    color: #030033;
+
+}
+.sectionfour-container .section-four .right .right-bottom-list div:nth-child(1),
+.sectionfour-container .section-four .right .right-bottom-list div:nth-child(3),
+.sectionfour-container .section-four .right .right-bottom-list div:nth-child(5),
+.sectionfour-container .section-four .right .right-bottom-list div:nth-child(7),
+.sectionfour-container .section-four .right .right-bottom-list div:nth-child(9){
+    background: rgba(14, 63, 51, 0.2);
+}
+
+@media (max-width: 767px){
+    .sectionfour-container{
+        display: none;
+    }
+}

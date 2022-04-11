@@ -1,0 +1,112 @@
+.section-two-container{
+    background-image: url('../../public//assets/Why-Choose-Pineapple-Island-bg.png');
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    min-height: 708px;
+    margin-top: 170px;
+    /* padding-top: 120px; */
+}
+.section-two{
+    display: flex;
+    justify-content: space-between;
+}
+.section-two-left{
+    position: relative;
+    top: 120px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 330px;
+    min-height: 634px;
+    padding: 5px;
+}
+.section-two-left h2{
+    max-width: 280px;
+    font-family: 'Playfair Display';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 60px;
+    line-height: 80px;
+    color: #FFFFFF;
+}
+.section-two-middle{
+    position: relative;
+    top: 120px;
+    width: 378px;
+    min-height: 634px;
+    background: #FFFFFF;
+    box-shadow: 0px 4px 25px 5px rgba(0, 0, 0, 0.1);
+    padding: 50px;
+}
+.section-two-middle p{
+    font-family: 'Manrope';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 32px;
+    color: #0E204E;
+}
+.section-two-right{
+    position: relative;
+    top: 120px;
+    width: 550px;
+    min-height: 634px;
+    background-image: url('../../public/assets/Why-Choose-Pineapple-Island-2.png');
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+}
+.section-two-mobile{
+    display: none;
+}
+
+@media(max-width: 767px){
+.section-two-container{
+    margin-top: 56px;
+background-image: none;
+}
+.section-two{
+    display: none;
+}
+.section-two-mobile{
+    display: block;
+}
+.section-two-mobile-header{
+    max-width: 224px;
+    text-align: center;
+    margin: 0 auto;
+}
+.section-two-mobile-header h2{
+    font-family: 'Playfair Display';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 32px;
+    text-align: center;
+    color: #0E204E;
+}
+.section-two-mobile-middle{
+    text-align: center;
+    max-width: 320px;
+    margin: 0 auto;
+}
+.section-two-mobile-middle p{
+    font-family: 'Lato';
+    font-style: normal;
+    font-weight: 300;
+    font-size: 16px;
+    line-height: 26px;
+    text-align: center;
+    color: #0E204E;
+}
+.section-two-mobile-bottom{
+    max-width: 335px;
+    margin: 0 auto;
+    min-height: 207px;
+}
+
+}
+@media(max-width: 980px){
+    .section-two-right{
+        display: none;
+    }
+}
