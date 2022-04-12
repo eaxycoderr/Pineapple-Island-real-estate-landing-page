@@ -75,8 +75,27 @@ justify-content: space-between;
         display: flex;
         align-items: center;
         justify-content: center;
-        height: 392px;
-        background: rgba(62, 62, 62, 0.64);
+        min-height: 392px;
+        background-image: url('../../public/assets/about-slid.png');
+        background-size: 100% 100%;
+        background-repeat: no-repeat;
+        padding-left: 12px;
+        padding-right: 12px;
+    }
+    .section-one-mobile-slide p{
+        font-family: 'Lato';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 26px;
+        text-align: center;
+        color: #FFFFFF;
+    }
+    .section-one-mobile-slide .left-arrow{
+        margin-right: 19px;
+    }
+    .section-one-mobile-slide .right-arrow{
+        margin-left: 19px;
     }
    
 }
