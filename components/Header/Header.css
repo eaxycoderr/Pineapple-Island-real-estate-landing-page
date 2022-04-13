@@ -44,10 +44,68 @@
     .hamburger{
       display: none;
     }
+    .header nav ul .logo-mobile,.header-get-in-touch-btn-mobile{
+      display: none;
+    }
 
     @media (max-width: 900px){
-      .header nav ul { display: none; } 
+      .header nav ul { 
+        display: none;
+        visibility: hidden;
+        position: fixed;
+        width: 100%;
+        left: 0;
+        right: 0;
+        top: -16px;
+        background-color: #0E204E;
+        height: 100vh;
+        z-index: 1;
+        padding-left: 20px;
+        padding-right: 20px;
+        /* text-align: center; */
+       } 
+       .header nav ul.nav-options.active { 
+        visibility: visible;
+       }
+       .header nav ul .logo-mobile{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+       }
+       .header nav ul .logo-mobile h2 { 
+        font-family: 'Playfair Display'; 
+        font-style: normal; 
+        font-weight: 700; 
+        font-size: 32px; 
+        line-height: 43px; 
+        color: #ffffff; 
+       }
+       .header nav ul { 
+        display: flex; 
+        flex-direction: column;
+        gap: 50px; 
+        } 
+       .header ul li a { 
+        color: #ffffff; 
+        } 
       .hamburger { display: block; } 
+      .header-get-in-touch-btn-mobile{
+        display: block;
+      }
+      .header-get-in-touch-btn-mobile button{
+        margin-top: 20px;
+        width: 100%; 
+        min-height: 50px; 
+        background-color: #ffffff;
+        border: none; 
+        outline: none; 
+        font-family: 'Manrope'; 
+        font-style: normal; 
+        font-weight: 400; 
+        font-size: 20px; 
+        line-height: 27px; 
+        color: #0E204E;
+      }
       }
      @media (max-width: 767px){
       .header .header-get-in-touch-btn button { display: none; } 
